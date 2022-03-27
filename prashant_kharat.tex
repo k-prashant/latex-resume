@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+% \newcommand{\resumeItem}[1]{
+%   \item\small{
+%     {#1 \vspace{-2pt}}
+%   }
+% }
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{}{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Prashant Prakash Kharat} \\ 
+    \vspace{1pt}
+    \href{mailto:prashantpkharat@gmail.com}{\underline{prashantpkharat@gmail.com}} $|$ 
+    \href{tel:+919892401810}{\small +91 9892401810}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Worldwide Media, Times of India Group}{Mumbai, India}
+      {Senior Engineer}{February 2018 - Present}
+      \resumeItemListStart
+        \resumeItem
+        {Progressive Web App}
+        {Developed PWA using Next.js having features such as voice search, push notification, offline caching. It was developed maintaining existing url structures with balancing traffic and SEO. It helped increase in traffic by 22\% and improved page speed insights score from 42 to 67.}
+        
+        \resumeItem
+        {CDN Migration}
+        {Collaborated on migrating inhouse websites over Content Delivery Network (CDN), which reduced load on origin server and increased site uptime with good latency.}
+        
+        \resumeItem
+        {Third Party Integration}
+        {Services like payment gateway, order management, cloud api have helped for a seamless user flow. Integration of custom adcodes, video api have helped organization to increase its revenue and able to serve end customers with rich user experience.}
+        
+        \resumeItem
+        {CMS Modules}
+        {Responsible for development of internal CMS modules which were useful for editors in creating articles. Custom tools like linking articles, image updation, creating schema helped in writing rich content. }
+        
+        \resumeItem
+        {Accelerated Mobile Pages}
+        {Implemented AMP pages and AMP stories of a web pages leading to increase in organic traffic by 16\%.}
+        
+        \resumeItem
+        {Page Speed Optimizations}
+        {Worked on optimizing article pages by following web standards which benefited in good page ranking resulted in increased pageviews with improved metrics.}
+        
+        \resumeItem
+        {Server Upgradations}
+        {Helped in upgrading server infrastructure with latest stable release and updating production codebase, which includes removing deprecated functionalities and implement supporting solutions.}
+        
+        \resumeItem
+        {Multi-Server Architecture}
+        {Worked on multiple server architecture placed behind a load balancer with static content served via CDN. This setup required to manage sessions, cache based on request handled by individual servers. }
+        
+        % \resumeItem
+        % {}
+        % {}
+        
+        % \resumeItem
+        % {}
+        % {}
+        
+        % \resumeItem
+        % {}
+        % {}
+        
+        % \resumeItem
+        % {}
+        % {}
+        
+        
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{}{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Antfarm Business Incubator}{Mumbai, India}
+      {Software Engineer}{October 2015 - December 2017}
+      \resumeItemListStart
+        \resumeItem
+        {Order Collection System}
+        {Worked with a team on developing food delivery system, which handles online order placed through different sources.}
+        
+        \resumeItem
+        {Data Flow}
+        {Streamlined flow of order from order placement till delivery, including integration of mail, SMS services, push notifications and order tracking.}
+        
+        \resumeItem
+        {Order Processing}
+        {Developed multiple CMS modules to be used by call center team for processing orders. The response time of every query has to be fast in order to reply oncall customers with high accuracy. }
+        
+        \resumeItem
+        {Vendor Management System}
+        {Developed vendor management portal and api to handle product stock and order history. This helped vendors to directly manage their inventories without interference of backend team.}
+        
+        \resumeItem
+        {Order Reports}
+        {Generated fincancial reports related to orders which helped account team for revenue settlement. It required to implement various excel macros into CMS in exporting reports.}
+        
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {ZedexInfo}{Mumbai, India}
+    %   {Intern}{October2014 - July 2015}
+    %   \resumeItemListStart
+    %     \resumeItem
+    %     {}
+    %     {}
+
+    %     \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PERSONAL PROJECTS-----------
+% \section{Personal Projects}
+%     \resumeSubHeadingListStart
+
+%         \resumeItem
+%         {Financial Website}
+%         {Developed a website which calculates an XIRR based on uploading an brokers excel sheet. It also includes a various financial calculator like compound interest, simple interest, SIP calculator, Lumpsum calculator.}
+
+% \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelors of Engineering}{India}
+      {Information Technology}{}
+      % {August 2008 - May 2012}
+    \resumeSubheading
+      {Masters of Engineering}{India}
+      {Computer Engineering}{}
+      % {August 2012 - October 2014}  
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, PHP, HTML, MySQL, MongoDB, Go(Intermediate) } \\
+     \textbf{Frameworks}{: Reactjs, Nextjs, Expressjs, jQuery } \\
+     \textbf{Tools}{: Git, SVN, Heroku, Docker} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
