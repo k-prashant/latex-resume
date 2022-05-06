@@ -74,6 +74,18 @@
   }
 }
 
+\newcommand{\resumeProjectItem}[3]{
+  \vspace{-2pt}\item
+      \textbf{#1}{ \textit{\small #2} } \\ #3 \\
+}
+
+\newcommand{\resumeEducationSubheading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}\textit{ #2 } & #3 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -118,11 +130,25 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Prashant Prakash Kharat} \\ 
+    \textbf{\huge \scshape Prashant Prakash Kharat} \\ 
     \vspace{1pt}
     \href{mailto:prashantpkharat@gmail.com}{prashantpkharat@gmail.com} $|$ 
     \href{tel:+919892401810}{\small +91 9892401810}
 \end{center}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: JavaScript, Go, MySQL, MongoDB, PostgreSQL, PHP, HTML } \\
+      \textbf{Frameworks}{: React, Express, Nextjs } \\
+      \textbf{Tools}{: AWS, Akamai, Docker, Kubernetes, Memcache, Git, Apache Kafka, Apache Solr, Heroku } \\
+    }}
+ \end{itemize}
+
+
 
 
 %-----------EXPERIENCE-----------
@@ -131,7 +157,7 @@
 
     \resumeSubheading
       {Worldwide Media, Times of India Group}{Mumbai, India}
-      {Senior Engineer}{February 2018 - Present}
+      {Senior Developer}{February 2018 - Present}
       \resumeItemListStart
         \resumeItem
         {Progressive Web App}
@@ -142,21 +168,17 @@
         {Collaborated on migrating inhouse websites over Content Delivery Network (CDN), which reduced load on origin server by 68\% and increased site uptime with good latency.}
         
         \resumeItem
+        {Accelerated Mobile Pages}
+        {Implemented AMP pages and AMP stories of a web pages leading to increase in organic traffic by 27\%.}
+        
+        \resumeItem
         {Third Party Integration}
         {Services like payment gateway, order management, cloud api have helped for a seamless user flow. Integration of custom adcodes, video api have helped organization to increase its revenue by 30\% and able to serve end customers with rich user experience.}
         
         \resumeItem
-        {CMS Modules}
-        {Responsible for development of internal CMS modules in Reactjs and PHP - which were useful for editors in creating articles. Custom tools like linking articles, image updation, creating schema helped in writing rich content. }
-        
-        \resumeItem
-        {Accelerated Mobile Pages}
-        {Implemented AMP pages and AMP stories of a web pages leading to increase in organic traffic by 25\%.}
-        
-        \resumeItem
         {Page Speed Optimizations}
         {Worked on optimizing article pages by following web standards which benefited in good page ranking resulted in increased pageviews by 45\% with improved metrics like high page session, lower bounce rate. It also helped in higher page crawling of search engine bots leading to more page indexing.}
-        
+
         \resumeItem
         {Server Upgradations}
         {Helped in upgrading server infrastructure with latest stable release and updating production codebase, which includes removing deprecated functionalities and implement supporting solutions.}
@@ -164,10 +186,14 @@
         \resumeItem
         {Multi-Server Architecture}
         {Worked on multiple server architecture placed behind a load balancer with static content served via CDN. This setup required to manage sessions, cache based on request handled by individual servers. }
-
+        
+        \resumeItem
+        {CMS Modules}
+        {Responsible for development of internal CMS modules in React and PHP - which were useful for editors in creating articles. Custom tools like linking articles, image updation, creating schema helped in writing rich content. }
+                
         % \resumeItem
         % {Technologies}
-        % {ReactJS, NextJS, NodeJS, ExpressJS, PHP, MySQL, Git}
+        % {React, Node, Express, NextJS, PHP, MySQL, Git}
         
         % \resumeItem
         % {}
@@ -201,11 +227,11 @@
 
     \resumeSubheading
       {Antfarm Business Incubator}{Mumbai, India}
-      {Software Engineer}{October 2015 - December 2017}
+      {Software Developer}{October 2015 - December 2017}
       \resumeItemListStart
         \resumeItem
         {Order Collection System}
-        {Worked with a team on developing food delivery system and rest API, which handles daily more than 1 million online order placed through multiple sources.}
+        {Worked with a team on developing food delivery system and REST APIs, which handles daily more than 1 million online order placed through multiple sources.}
         
         \resumeItem
         {Data Flow}
@@ -217,7 +243,7 @@
         
         \resumeItem
         {Vendor Management System}
-        {Created vendor management portal and API using PHP, MySql, MongoDB - to handle product stock and order history. This helped vendors to directly manage their inventories without interference of backend team.}
+        {Created vendor management portal and REST APIs using PHP, MySql, MongoDB - to handle product stock and order history. This helped vendors to directly manage their inventories without interference of backend team.}
         
         \resumeItem
         {Order Reports}
@@ -251,40 +277,31 @@
 
 
 %-----------PERSONAL PROJECTS-----------
-% \section{Personal Projects}
-%     \resumeSubHeadingListStart
+\section{Personal Projects}
+    \resumeSubHeadingListStart
 
-%         \resumeItem
-%         {Financial Website}
-%         {Developed a website which calculates an XIRR based on uploading an brokers excel sheet. It also includes a various financial calculator like compound interest, simple interest, SIP calculator, Lumpsum calculator.}
+        \resumeProjectItem
+        {Fin Calc |} {Go, React, NextJS}
+        % {XIRR calculator based on uploaded brokers excel sheet. It also includes a various financial calculator like compound interest, simple interest, SIP investment, Lumpsum investment.}
+        {Implemented financial calculator like compound interest, simple interest, SIP and Lumpsum investment returns.}
 
-% \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelors of Engineering}{India}
-      {Information Technology}{}
+    \resumeEducationSubheading
+      {Bachelors of Engineering}
+      {Information Technology}
+      {India}
       % {August 2008 - May 2012}
-    \resumeSubheading
-      {Masters of Engineering}{India}
-      {Computer Engineering}{}
+    \resumeEducationSubheading
+      {Masters of Engineering}
+      {Computer Engineering}
+      {India}
       % {August 2012 - October 2014}  
   \resumeSubHeadingListEnd
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: JavaScript, PHP, HTML, MySQL, MongoDB, Go(Intermediate) } \\
-     \textbf{Frameworks}{: Reactjs, Nextjs, Expressjs } \\
-     \textbf{Tools}{: Git, SVN, Heroku, Docker} \\
-    }}
- \end{itemize}
 
 
 %-------------------------------------------
